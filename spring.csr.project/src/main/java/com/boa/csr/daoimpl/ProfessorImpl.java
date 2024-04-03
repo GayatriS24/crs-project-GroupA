@@ -4,10 +4,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.boa.csr.dao.Professor;
+import com.boa.csr.dao.User;
 import com.boa.csr.repo.ProfessorRepo;
 
 @Service
-public class ProfessorImpl implements Professor{
+public class ProfessorImpl implements Professor,User{
 
 	@Autowired
 	public ProfessorRepo professorRepo;
